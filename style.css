@@ -1,0 +1,30 @@
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    grid-template-rows: repeat(5, 40px); 
+    justify-content: center; 
+    gap: 2px 2px;
+    
+}
+
+.calculator > div { 
+    background:#eee;
+    padding:1em;
+}
+
+.calculator #clear {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.calculator #display {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+
+.gridBlock {
+    border-style: solid;
+    border-width: thin;
+}
